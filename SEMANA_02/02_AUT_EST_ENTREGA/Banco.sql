@@ -7,11 +7,11 @@ CREATE TABLE curriculum (
   phone_number text,
   email text,
   description text,
-  curriculum_id integer PRIMARY KEY
+  curriculum_id integer PRIMARY KEY AUTOINCREMENT
 );
 
   CREATE TABLE education (
-  education_id integer PRIMARY KEY,
+  education_id integer PRIMARY KEY AUTOINCREMENT,
   curriculum_id integer,
   name text,
   description text,
