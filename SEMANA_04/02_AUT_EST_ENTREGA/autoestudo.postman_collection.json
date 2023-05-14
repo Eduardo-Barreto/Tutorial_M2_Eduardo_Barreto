@@ -1,0 +1,607 @@
+{
+	"info": {
+		"_postman_id": "1222ee2f-87fe-4594-bf0b-a272a07117ff",
+		"name": "Autoestudo 04",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17376341"
+	},
+	"item": [
+		{
+			"name": "Experiências",
+			"item": [
+				{
+					"name": "Adiciona experiência",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"company_name\": \"FLL\",\n    \"role\": \"Competidor\",\n    \"description\": \"Competiu na FLL\",\n    \"start_year\": \"2016\",\n    \"end_year\": \"2020\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/experiences/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"experiences",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista todas as experiências",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/experiences",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"experiences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista experiências",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/experiences/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"experiences",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza experiência",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"description\": \"Competiu na FLL nacionalmente\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/experiences/1/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"experiences",
+								"1",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove experiência",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/experiences/1/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"experiences",
+								"1",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Personalidades",
+			"item": [
+				{
+					"name": "Adiciona personalidade",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"animado\",\n    \"level\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/personalities/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"personalities",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista todas as personalidades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/personalities",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"personalities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista personalidade",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/personalities/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"personalities",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza personalidade",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"level\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/personalities/1/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"personalities",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove personalidade",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/personalities/1/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"personalities",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Habilidades",
+			"item": [
+				{
+					"name": "Adiciona habilidade",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"C++\",\n    \"level\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/habilities/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"habilities",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista todas as habilidades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/habilities",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"habilities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista habilidade",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/habilities/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"habilities",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza habilidade",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"level\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/habilities/1/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"habilities",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove habilidade",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/habilities/1/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"habilities",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Formações",
+			"item": [
+				{
+					"name": "Adiciona formação",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"SESI\",\n    \"description\": \"ensino médio\",\n    \"start_year\": \"2020\",\n    \"end_year\": \"2022\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/education/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"education",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista todas as formações",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/education",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"education"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista formação",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/education/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"education",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza formação",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"SESI SP\",\n    \"description\": \"ensino médio\",\n    \"start_year\": \"2020\",\n    \"end_year\": \"2022\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/education/1/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"education",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove formação",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/education/1/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"education",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Realizações",
+			"item": [
+				{
+					"name": "Adiciona realização",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"1º GEAP IB Hackathon\",\n    \"description\": \"Primeiro lugar na categoria GEAP do hackathon da Inteli Blockchain\",\n    \"year\": \"2023\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/realizations/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"realizations",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista todas as realizações",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/realizations",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"realizations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista realização",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/realizations/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"realizations",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza realização",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"1º GEAP IB Hackathon\",\n    \"description\": \"Primeiro lugar na categoria GEAP do Challenge 2023 da Inteli Blockchain\",\n    \"year\": \"2023\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/realizations/1/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"realizations",
+								"1",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove realização",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/realizations/1/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"realizations",
+								"1",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:3031",
+			"type": "string"
+		}
+	]
+}
