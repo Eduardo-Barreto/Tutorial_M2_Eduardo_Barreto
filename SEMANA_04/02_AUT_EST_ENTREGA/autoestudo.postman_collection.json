@@ -575,6 +575,117 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Currículo",
+			"item": [
+				{
+					"name": "Adiciona currículo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\": \"eduardo\",\n    \"last_name\": \"barreto\",\n    \"role\": \"engenheiro de computacao\",\n    \"picture_URL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"address\": \"rua um dois tres\",\n    \"phone_number\": \"11912345678\",\n    \"email\": \"emailbom@topemails.com\",\n    \"description\": \"tem um email bacana\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/curriculum",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"curriculum"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista todos os currículos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/curriculum",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"curriculum"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista currículo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/curriculum/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"curriculum",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza currículo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"description\": \"email bacana :the_horns:\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/curriculum/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"curriculum",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove currículo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/curriculum/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"curriculum",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	],
 	"event": [
