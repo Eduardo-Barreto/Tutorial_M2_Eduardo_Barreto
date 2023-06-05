@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Currículo</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://em-content.zobj.net/source/microsoft-teams/363/sign-of-the-horns_1f918.png"
+                    alt="Foto">
+                <h1 class="first-name">Eduardo Barreto</h1>
+                <h2 class="role">Engenheiro de Computação</h2>
+            </div>
+            <div class="card-body">
+                <h3>Informações Pessoais</h3>
+                <p>Endereço: <span class="address">Rua dos Bobos, nº 0</span></p>
+                <p>Telefone: <span class="phone">11 99999-9999</span></p>
+                <p>Email: <span class="email">eduardopontobarreto@gmail.com</span></p>
+                <p>Descrição: <span class="description">🤘</span></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2>Educação</h2>
+            </div>
+            <div class="card-body" id="education-list">
+                <div class="education-item">
+                    <h3><span class="education-name">SESI</span></h3>
+                    <p><span class="education-description">Ensino Médio</span></p>
+                    <p>Ano de Início: <span class="education-start-year">2020</span></p>
+                    <p>Ano de Conclusão: <span class="education-end-year">2022</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2>Experiências</h2>
+            </div>
+            <div class="card-body" id="experiences-list">
+                <div class="experience-item">
+                    <h3><span class="experience-company">SESI VMRT</span></h3>
+                    <p><span class="experience-role">Competidor OBR</span></p>
+                    <p><span class="experience-description">Competiu na OBR nacionalmente</span></p>
+                    <p>Ano de Início: <span class="experience-start-year">2020</span></p>
+                    <p>Ano de Término: <span class="experience-end-year">2022</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2>Realizações</h2>
+            </div>
+            <div class="card-body" id="achievements-list">
+                <div class="achievement-item">
+                    <h3><span class="achievement-name">1º GEAP IB Hackathon</span></h3>
+                    <p><span class="achievement-description">Primeiro lugar na categoria GEAP do Challenge 2023 da
+                            Inteli Blockchain</span></p>
+                    <p>Ano: <span class="achievement-year">2023</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2>Personalidades</h2>
+            </div>
+            <div class="card-body" id="personalities-list">
+                <h3><span class="personality-name">Animado</span></h3>
+                <div class="progress-bar">
+                    <div class="progress-level" style="width: 60%;">3</div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2>Habilidades</h2>
+            </div>
+            <div class="card-body" id="skills-list">
+                <h3><span class="skill-name">C++</span></h3>
+                <div class="progress-bar">
+                    <div class="progress-level" style="width: 40%;">2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('img').hover(function () {
+                $(this).css('background-color', 'yellow');
+            }, function () {
+                $(this).css('background-color', '');
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
